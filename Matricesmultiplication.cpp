@@ -5,47 +5,48 @@
 using namespace std;
 int main()
 {
-int i,j,x,y;
+//this program is for multiplication of two matrices
+int row1,col1,row2,col2;
 int sum,multiply;
 cout<<"Input # of rows of first matrix: ";
-cin>>i;
+cin>>row1;
 cout<<"Input # of columns of first matrix: ";
-cin>>j;
+cin>>col1;
 cout<<"Input # of rows of second matrix: ";
-cin>>x;
+cin>>row2;
 cout<<"Input # of columns of second matrix: ";
-cin>>y;
-int m1[i][j],m2[x][y];
+cin>>col2;
+int m1[row1][col1],m2[row2][col2];
 cout<<"Input first matrix:\n";
-for(int a=0;a<i;a++)
+for(int i=0;i<row1;i++)
 {
-for(int b=0;b<j;b++)
+for(int j=0;j<col1;j++)
 {
-cin>>m1[a][b];
+cin>>m1[i][j];
 }
 }
 cout<<"Input second matrix:\n";
-for(int a=0;a<x;a++)
+for(int i=0;i<row2;i++)
 {
-for(int b=0;b<y;b++)
+for(int j=0;j<col2;j++)
 {
-cin>>m2[a][b];
+cin>>m2[i][j];
 }
 }
-if(j==x)								//condition for multiplication of matrices # of col of first matrix
-										// must be eaqual to # of rows of of second
+if(col1==row2)							//condition for multiplication of matrices # of col of first matrix
+								// must be eaqual to # of rows of of second
 {
-for(int k=0;k<i;k++)
+for(int i=0;i<row1;i++)
 {
-for(int l=0;l<y;l++)
+for(int j=0;j<col2;j++)
 {
 sum=0;
-j=-1;
-for(int m=0;m<x;m++)
+col1=-1;
+for(int k=0;k<row2;k++)
 {
-j++;
+col1++;
 {
-multiply=m1[k][j]*m2[m][l];
+multiply=m1[i][col1]*m2[k][j];
 sum=sum+multiply;	
 }
 }
