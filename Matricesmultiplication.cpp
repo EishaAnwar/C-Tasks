@@ -12,7 +12,7 @@ cout<<"Input # of rows of first matrix: ";
 cin>>row1;
 cout<<"Input # of columns of first matrix: ";
 cin>>col1;
-cout<<"Input # of rows of second matrix: "//erased ;
+cout<<"Input # of rows of second matrix: ";
 cin>>row2;
 cout<<"Input # of columns of second matrix: ";
 cin>>col2;
