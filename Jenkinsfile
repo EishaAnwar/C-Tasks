@@ -1,11 +1,14 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
         echo 'HelloWorld1'
       }
     }
 
+  }
+  environment {
+    t = '1'
   }
 }
